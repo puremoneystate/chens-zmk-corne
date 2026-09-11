@@ -107,7 +107,6 @@
         default_layer {
             display-name = "Base";
             bindings = <
-
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                  &mmv MOVE_UP             &kp Y        &kp U  &kp I      &kp O        &kp P     &kp BSPC
 &td_ctl    &kp A  &kp S  &kp D     &kp F  &kp G   &mmv MOVE_LEFT &mkp MB1 &mmv MOVE_RIGHT &kp H        &kp J  &kp K      &mt LSHFT L  &kp SEMI  &kp ENTER
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B   &mkp MB3       &kp MOVE_DOWN            &kp N        &kp M  &kp COMMA  &kp DOT      &kp FSLH  &mt LSHFT SQT
