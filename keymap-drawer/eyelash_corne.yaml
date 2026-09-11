@@ -46,7 +46,7 @@ layers:
   - LGUI
   - $$mdi:keyboard-space$$
   - {t: Num/Sym, h: Num/Sym}
-  - {t: Nav-Ctrl, h: Nav-Ctrl}
+  - {t: Nav_Ctrl, h: Nav_Ctrl}
   - {t: Nav, h: Nav}
   - $$mdi:apple-keyboard-option$$
   Num/Sym:
@@ -98,7 +98,7 @@ layers:
   - Fn
   - {t: '0', s: )}
   - {t: ., s: '>'}
-  Nav-Ctrl:
+  Nav_Ctrl:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -288,13 +288,13 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
-  - Game-alt
+  - Game_alt
   - $$mdi:keyboard-space$$
-  - Game-alt
-  - {t: Nav-Ctrl, h: Nav-Ctrl}
+  - Game_alt
+  - {t: Nav_Ctrl, h: Nav_Ctrl}
   - {t: Nav, h: Nav}
   - $$mdi:apple-keyboard-option$$
-  Game-alt:
+  Game_alt:
   - $$mdi:keyboard-tab$$
   - {t: '1', s: '!'}
   - W
@@ -340,7 +340,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - {t: Nav-Ctrl, h: Nav-Ctrl}
+  - {t: Nav_Ctrl, h: Nav_Ctrl}
   - {t: Nav, h: Nav}
   - $$mdi:apple-keyboard-option$$
 combos:
