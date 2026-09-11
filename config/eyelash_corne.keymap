@@ -70,7 +70,7 @@
     behaviors {
         mo_tog: mo_tog {
             compatible = "zmk,behavior-hold-tap";
-            display-name = "layer mo-tog"
+            display-name = "layer mo-tog";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             /* tapping-term-ms = <200>; */
