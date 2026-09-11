@@ -50,7 +50,7 @@ layers:
   - {t: Nav, h: Nav}
   - $$mdi:apple-keyboard-option$$
   Num/Sym:
-  - '&GRAVE'
+  - {t: '`', s: '~'}
   - '!'
   - '@'
   - '#'
@@ -63,7 +63,7 @@ layers:
   - {t: '9', s: (}
   - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&TILDE'
+  - '~'
   - ^
   - '&'
   - '*'
