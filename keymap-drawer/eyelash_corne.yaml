@@ -26,7 +26,7 @@ layers:
   - H
   - J
   - K
-  - {t: L, h: '$$mdi:apple-keyboard-shift$$'}
+  - L
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
@@ -36,7 +36,7 @@ layers:
   - V
   - B
   - '&mkp MB3'
-  - MOVE DOWN
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - N
   - M
   - {t: ',', s: <}
