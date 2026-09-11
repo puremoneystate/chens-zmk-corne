@@ -513,10 +513,11 @@ rect.held, rect.combo.held {
 <g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Nav_Ctrl">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 75%">Nav_Ctrl</tspan></text>
-</a><a href="#Nav_Ctrl">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">Nav_Ctrl</tspan></text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.9em">Nav-</tspan><tspan x="0" dy="1.2em">Ctrl</tspan>
+</text>
+<a href="#Nav-Ctrl">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">Nav-Ctrl</tspan></text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -787,7 +788,12 @@ rect.held, rect.combo.held {
 <g transform="translate(348, 226) rotate(24.0)" class="key held keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
-</g>
+<text x="0" y="-4" class="key held tap">
+<tspan x="0" dy="-0.9em">Num/</tspan><tspan x="0" dy="1.2em">Sym</tspan>
+</text>
+<a href="#NumSym">
+<text x="0" y="24" class="key held hold layer-activator"><tspan style="font-size: 86%">Num/Sym</tspan></text>
+</a></g>
 <g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -813,8 +819,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 637)" class="layer-Nav_Ctrl">
-<text x="0" y="28" class="label" id="Nav_Ctrl">Nav_Ctrl:</text>
+<g transform="translate(40, 637)" class="layer-Nav-Ctrl">
+<text x="0" y="28" class="label" id="Nav-Ctrl">Nav-Ctrl:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1800,9 +1806,10 @@ rect.held, rect.combo.held {
 <g transform="translate(224, 203)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Game_alt">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 75%">Game_alt</tspan></text>
-</a></g>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.6em">Game-</tspan><tspan x="0" dy="1.2em">alt</tspan>
+</text>
+</g>
 <g transform="translate(285, 209) rotate(12.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -1811,16 +1818,18 @@ rect.held, rect.combo.held {
 <g transform="translate(348, 226) rotate(24.0)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Game_alt">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 75%">Game_alt</tspan></text>
-</a></g>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.6em">Game-</tspan><tspan x="0" dy="1.2em">alt</tspan>
+</text>
+</g>
 <g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Nav_Ctrl">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 75%">Nav_Ctrl</tspan></text>
-</a><a href="#Nav_Ctrl">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">Nav_Ctrl</tspan></text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.9em">Nav-</tspan><tspan x="0" dy="1.2em">Ctrl</tspan>
+</text>
+<a href="#Nav-Ctrl">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">Nav-Ctrl</tspan></text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1842,8 +1851,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1911)" class="layer-Game_alt">
-<text x="0" y="28" class="label" id="Game_alt">Game_alt:</text>
+<g transform="translate(40, 1911)" class="layer-Game-alt">
+<text x="0" y="28" class="label" id="Game-alt">Game-alt:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -2094,10 +2103,11 @@ rect.held, rect.combo.held {
 <g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Nav_Ctrl">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 75%">Nav_Ctrl</tspan></text>
-</a><a href="#Nav_Ctrl">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">Nav_Ctrl</tspan></text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.9em">Nav-</tspan><tspan x="0" dy="1.2em">Ctrl</tspan>
+</text>
+<a href="#Nav-Ctrl">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">Nav-Ctrl</tspan></text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
