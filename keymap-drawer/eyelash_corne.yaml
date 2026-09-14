@@ -198,9 +198,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:brightness-5$$
-  - $$mdi:skip-next$$
   - $$mdi:brightness-7$$
+  - $$mdi:skip-next$$
+  - $$mdi:brightness-5$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -300,7 +300,7 @@ layers:
   - W
   - {t: '2', s: '@'}
   - {t: '5', s: '%'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '8', s: '*'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Y
   - U
@@ -313,7 +313,7 @@ layers:
   - S
   - {t: '3', s: '#'}
   - {t: '6', s: ^}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '9', s: (}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&mkp MB1'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -328,7 +328,7 @@ layers:
   - X
   - {t: '4', s: $}
   - {t: '7', s: '&'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '0', s: )}
   - '&mkp MB3'
   - MOVE DOWN
   - N
