@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 75   // 10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -117,11 +117,11 @@
 
 
         layer_1 {
-            display-name = "Num/Sym";
+            display-name = "Num-Sym";
             bindings = <
-&kp GRAVE &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT                 &mmv SCRL_UP             &trans  &kp N7  &kp N8  &kp N9  &kp MINUS &trans
-&kp TILDE &kp CARET &kp AMPS &kp ASTRK &kp MINUS &kp UNDER  &mmv SCRL_LEFT &mkp MB2 &mmv SCRL_RIGHT &trans  &kp N4  &kp N5  &kp N6  &kp PLUS  &trans
-&trans &trans    &trans   &trans    &trans    &trans        &kp C_MUTE     &mmv SCRL_DOWN           &trans  &kp N1  &kp N2  &kp N3  &kp SLASH &kp ASTRK
+&kp GRAVE &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT                 &kp C_VOL_UP             &trans  &kp N7  &kp N8  &kp N9  &kp MINUS &trans
+&kp TILDE &kp CARET &kp AMPS &kp ASTRK &kp MINUS &kp UNDER  &kp C_PREV &kp C_PP &kp C_NEXT &trans  &kp N4  &kp N5  &kp N6  &kp PLUS  &trans
+&trans &trans    &trans   &trans    &trans    &trans        &kp C_MUTE     &kp C_VOL_DN           &trans  &kp N1  &kp N2  &kp N3  &kp SLASH &kp ASTRK
                           &trans    &trans    &trans                                             &mo 4   &kp N0  &kp DOT
             >;
 
@@ -135,8 +135,8 @@
         layer_2 {
             display-name = "Nav-Ctrl";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans             &trans         &trans       &trans   &kp LC(UP)       &trans        &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans &trans &trans  &kp LC(BSPC) &kp LC(LEFT) &kp LC(DOWN) &kp LC(RIGHT) &kp LC(DEL) &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans         &trans       &trans   &kp HOME       &trans        &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans &trans &trans  &kp LC(BSPC) &kp LC(LEFT) &kp END &kp LC(RIGHT) &kp LC(DEL) &trans
 &trans  &trans  &trans  &trans  &trans  &bootloader &trans &trans         &trans       &trans       &trans       &trans        &trans      &trans
                         &trans  &trans  &mo 4                                          &trans   &trans   &trans
             >;
@@ -165,9 +165,9 @@
         layer_4 {
             display-name = "Fn";
             bindings = <
-&trans          &trans        &trans        &trans        &trans       &trans             &trans         &trans  &kp F7 &kp F8 &kp F9 &kp F10  &kp BSPC
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &to 5       &trans &trans &trans  &trans  &kp F4 &kp F5 &kp F6 &kp F11  &kp GRAVE
-&trans          &trans        &trans        &trans        &trans       &bootloader &trans &trans         &trans  &kp F1 &kp F2 &kp F3 &kp F12  &kp TILDE
+&trans          &kp C_BRI_UP        &kp C_NEXT        &kp C_BRI_DN        &trans       &trans             &trans         &trans  &kp F7 &kp F8 &kp F9 &kp F10  &kp BSPC
+&kp C_MUTE  &kp C_VOL_UP  &kp C_PP &kp C_VOL_DN  &trans &trans       &trans &trans &trans  &trans  &kp F4 &kp F5 &kp F6 &kp F11  &kp GRAVE
+&bt BT_CLR          &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3       &bootloader &trans &trans         &trans  &kp F1 &kp F2 &kp F3 &kp F12  &kp TILDE
                               &trans        &trans        &trans                                         &trans  &trans &trans
             >;
 
@@ -183,8 +183,8 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                  &mmv MOVE_UP             &kp Y       &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &td_ctl    &kp A  &kp S  &kp D  &kp F  &kp G   &mmv MOVE_LEFT &mkp MB1 &mmv MOVE_RIGHT &kp H       &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B   &mkp MB3       &kp MOVE_DOWN            &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt LSHFT SQT
-                         &mo 6  &kp SPACE      &mo 6                                   MO_TOG(2)   MO_TOG(3)  &kp RALT
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B   &kp C_MUTE       &kp MOVE_DOWN            &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt LSHFT SQT
+                         &kp SPACE  &lt 6 SPACE      &mo 1                                   &mo 2   &mo 3  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -194,10 +194,10 @@
         layer_6 {
             display-name = "Game-alt";
             bindings = <
-&kp TAB    &kp N1 &kp W  &kp N2  &kp N3  &kp N6                  &mmv MOVE_UP             &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td_ctl    &kp A  &kp S  &kp D   &kp N4  &kp N7   &mmv MOVE_LEFT &mkp MB1 &mmv MOVE_RIGHT &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHFT  &kp Z  &kp X  &kp C   &kp N5  &kp N8   &mkp MB3       &kp MOVE_DOWN            &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt LSHFT SQT
-                         &trans  &trans  &trans                                           MO_TOG(2)    MO_TOG(3)  &kp RALT
+&kp TAB    &kp N1 &kp W  &kp N2  &kp N5  &trans                  &mmv MOVE_UP             &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&td_ctl    &kp A  &kp S  &kp N3   &kp N6  &trans   &mmv MOVE_LEFT &mkp MB1 &mmv MOVE_RIGHT &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHFT  &kp Z  &kp X  &kp N4   &kp N7  &trans   &mkp MB3       &kp MOVE_DOWN            &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt LSHFT SQT
+                         &trans  &trans  &trans                                           &to 0    &to 0  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
