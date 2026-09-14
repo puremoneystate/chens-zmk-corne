@@ -165,7 +165,7 @@
         layer_4 {
             display-name = "Fn";
             bindings = <
-&trans          &kp C_BRI_UP        &kp C_NEXT        &kp C_BRI_DN        &trans       &trans             &trans         &trans  &kp F7 &kp F8 &kp F9 &kp F10  &kp BSPC
+&trans          &kp C_BRI_DN        &kp C_NEXT        &kp C_BRI_UP        &trans       &trans             &trans         &trans  &kp F7 &kp F8 &kp F9 &kp F10  &kp BSPC
 &kp C_MUTE  &kp C_VOL_UP  &kp C_PP &kp C_VOL_DN  &trans &trans       &trans &trans &trans  &trans  &kp F4 &kp F5 &kp F6 &kp F11  &kp GRAVE
 &bt BT_CLR          &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3       &bootloader &trans &trans         &trans  &kp F1 &kp F2 &kp F3 &kp F12  &kp TILDE
                               &trans        &trans        &trans                                         &trans  &trans &trans
@@ -194,9 +194,9 @@
         layer_6 {
             display-name = "Game-alt";
             bindings = <
-&kp TAB    &kp N1 &kp W  &kp N2  &kp N5  &trans                  &mmv MOVE_UP             &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td_ctl    &kp A  &kp S  &kp N3   &kp N6  &trans   &mmv MOVE_LEFT &mkp MB1 &mmv MOVE_RIGHT &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHFT  &kp Z  &kp X  &kp N4   &kp N7  &trans   &mkp MB3       &kp MOVE_DOWN            &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt LSHFT SQT
+&kp TAB    &kp N1 &kp W  &kp N2  &kp N5  &kp N8                  &mmv MOVE_UP             &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&td_ctl    &kp A  &kp S  &kp N3   &kp N6  &kp N9   &mmv MOVE_LEFT &mkp MB1 &mmv MOVE_RIGHT &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHFT  &kp Z  &kp X  &kp N4   &kp N7  &kp N0   &mkp MB3       &kp MOVE_DOWN            &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt LSHFT SQT
                          &trans  &trans  &trans                                           &to 0    &to 0  &kp RALT
             >;
 
