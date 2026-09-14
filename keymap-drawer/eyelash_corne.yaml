@@ -211,9 +211,9 @@ layers:
   - F10
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:volume-off$$
-  - $$mdi:volume-high$$
-  - $$mdi:play-pause$$
   - $$mdi:volume-low$$
+  - $$mdi:play-pause$$
+  - $$mdi:volume-high$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
