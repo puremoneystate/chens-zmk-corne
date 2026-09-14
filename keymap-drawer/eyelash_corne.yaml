@@ -45,18 +45,18 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - LGUI
   - $$mdi:keyboard-space$$
-  - {t: Num/Sym, h: Num/Sym}
+  - {t: Num-Sym, h: Num-Sym}
   - {t: Nav-Ctrl, h: Nav-Ctrl}
   - {t: Nav, h: Nav}
   - $$mdi:apple-keyboard-option$$
-  Num/Sym:
+  Num-Sym:
   - {t: '`', s: '~'}
   - '!'
   - '@'
   - '#'
   - $
   - '%'
-  - '&mmv SCRL_UP'
+  - $$mdi:volume-high$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -69,9 +69,9 @@ layers:
   - '*'
   - {t: '-', s: _}
   - _
-  - '&mmv SCRL_LEFT'
-  - '&mkp MB2'
-  - '&mmv SCRL_RIGHT'
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -85,7 +85,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
-  - '&mmv SCRL_DOWN'
+  - $$mdi:volume-low$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -108,7 +108,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+$$mdi:arrow-up-bold$$
+  - HOME
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -123,7 +123,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - Ctl+$$mdi:arrow-left-bold$$
-  - Ctl+$$mdi:arrow-down-bold$$
+  - END
   - Ctl+$$mdi:arrow-right-bold$$
   - Ctl+$$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -198,9 +198,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:brightness-5$$
+  - $$mdi:skip-next$$
+  - $$mdi:brightness-7$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -210,12 +210,12 @@ layers:
   - F9
   - F10
   - {t: '$$mdi:backspace$$', type: backspace}
-  - BT CLR ALL
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {t: Game, h: toggle}
+  - $$mdi:volume-off$$
+  - $$mdi:volume-high$$
+  - $$mdi:play-pause$$
+  - $$mdi:volume-low$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -225,11 +225,11 @@ layers:
   - F6
   - F11
   - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:bluetooth-off$$
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -280,7 +280,7 @@ layers:
   - C
   - V
   - B
-  - '&mkp MB3'
+  - $$mdi:volume-off$$
   - MOVE DOWN
   - N
   - M
@@ -288,19 +288,19 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
-  - Game-alt
   - $$mdi:keyboard-space$$
-  - Game-alt
-  - {t: Nav-Ctrl, h: Nav-Ctrl}
-  - {t: Nav, h: Nav}
+  - {t: '$$mdi:keyboard-space$$', h: Game-alt}
+  - Num-Sym
+  - Nav-Ctrl
+  - Nav
   - $$mdi:apple-keyboard-option$$
   Game-alt:
   - $$mdi:keyboard-tab$$
   - {t: '1', s: '!'}
   - W
   - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '6', s: ^}
+  - {t: '5', s: '%'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Y
   - U
@@ -311,9 +311,9 @@ layers:
   - '&td_ctl'
   - A
   - S
-  - D
-  - {t: '4', s: $}
-  - {t: '7', s: '&'}
+  - {t: '3', s: '#'}
+  - {t: '6', s: ^}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&mkp MB1'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -326,9 +326,9 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
-  - C
-  - {t: '5', s: '%'}
-  - {t: '8', s: '*'}
+  - {t: '4', s: $}
+  - {t: '7', s: '&'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB3'
   - MOVE DOWN
   - N
@@ -337,11 +337,11 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
-  - {t: Nav-Ctrl, h: Nav-Ctrl}
-  - {t: Nav, h: Nav}
+  - {t: Base, h: toggle}
+  - {t: Base, h: toggle}
   - $$mdi:apple-keyboard-option$$
 combos:
 - p: [1, 15, 29]
