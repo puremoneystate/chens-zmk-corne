@@ -17,8 +17,8 @@ layers:
   - '&td_ctl'
   - A
   - S
-  - D
-  - F
+  - {t: D, h: Nav-Ctrl}
+  - {t: F, h: Nav}
   - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&mkp MB1'
@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
-  - LGUI
+  - {t: 'Gui+$$mdi:keyboard-space$$', h: LGUI}
   - $$mdi:keyboard-space$$
   - {t: Num-Sym, h: Num-Sym}
   - {t: Nav-Ctrl, h: Nav-Ctrl}
@@ -115,18 +115,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   - Ctl+$$mdi:arrow-left-bold$$
   - END
   - Ctl+$$mdi:arrow-right-bold$$
-  - Ctl+$$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+  - '&LC(DEL)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -144,7 +144,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Fn
-  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Nav:
@@ -165,17 +165,17 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -213,9 +213,9 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:volume-low$$
   - $$mdi:play-pause$$
-  - $$mdi:volume-high$$
+  - {t: '$$mdi:volume-high$$', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Game, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -252,7 +252,7 @@ layers:
   - E
   - R
   - T
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:volume-high$$
   - Y
   - U
   - I
@@ -265,9 +265,9 @@ layers:
   - D
   - F
   - G
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB1'
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - H
   - J
   - K
@@ -281,7 +281,7 @@ layers:
   - V
   - B
   - $$mdi:volume-off$$
-  - MOVE DOWN
+  - $$mdi:volume-low$$
   - N
   - M
   - {t: ',', s: <}
@@ -301,7 +301,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '5', s: '%'}
   - {t: '8', s: '*'}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:volume-high$$
   - Y
   - U
   - I
@@ -314,9 +314,9 @@ layers:
   - {t: '3', s: '#'}
   - {t: '6', s: ^}
   - {t: '9', s: (}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB1'
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
   - H
   - J
   - K
@@ -329,8 +329,8 @@ layers:
   - {t: '4', s: $}
   - {t: '7', s: '&'}
   - {t: '0', s: )}
-  - '&mkp MB3'
-  - MOVE DOWN
+  - $$mdi:volume-off$$
+  - $$mdi:volume-low$$
   - N
   - M
   - {t: ',', s: <}
@@ -340,7 +340,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Base, h: toggle}
+  - {t: Fn, h: toggle}
   - {t: Base, h: toggle}
   - $$mdi:apple-keyboard-option$$
 combos:
