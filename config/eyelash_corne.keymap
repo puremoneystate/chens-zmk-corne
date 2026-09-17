@@ -94,7 +94,7 @@
 
         rpar {
           bindings=<&kp RPAR>;
-          key-positions=<6 7>;
+          key-positions=<7 8>;
           layers=<1>;
           timeout-ms=<200>;
         };
