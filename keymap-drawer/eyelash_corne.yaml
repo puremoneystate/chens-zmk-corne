@@ -62,7 +62,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '-', s: _}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '=', s: +}
   - '~'
   - ^
   - '&'
@@ -90,8 +90,8 @@ layers:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - {t: /, s: '?'}
   - '*'
+  - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -346,3 +346,27 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
+- p: [24, 25]
+  k: $$mdi:keyboard-esc$$
+  l: [Base]
+- p: [2, 42]
+  k: Alt+F4
+  l: [Base]
+- p: [4, 5]
+  k: (
+  l: [Num-Sym]
+- p: [6, 7]
+  k: )
+  l: [Num-Sym]
+- p: [17, 18]
+  k: {t: '[', s: '{'}
+  l: [Num-Sym]
+- p: [22, 23]
+  k: {t: ']', s: '}'}
+  l: [Num-Sym]
+- p: [32, 33]
+  k: '{'
+  l: [Num-Sym]
+- p: [36, 37]
+  k: '}'
+  l: [Num-Sym]
