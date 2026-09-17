@@ -872,6 +872,15 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="137" width="28" height="26" class="combo"/>
 <text x="700" y="150" class="combo tap">}</text>
 </g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="854" y="141" width="28" height="26" class="combo"/>
+<text x="868" y="154" class="combo tap">/</text>
+<text x="868" y="143" class="combo shifted">?</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="910" y="148" width="28" height="26" class="combo"/>
+<text x="924" y="161" class="combo tap">|</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 637)" class="layer-Nav-Ctrl">

@@ -370,3 +370,9 @@ combos:
 - p: [36, 37]
   k: '}'
   l: [Num-Sym]
+- p: [39, 40]
+  k: {t: /, s: '?'}
+  l: [Num-Sym]
+- p: [40, 41]
+  k: '|'
+  l: [Num-Sym]
