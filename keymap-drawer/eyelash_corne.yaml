@@ -126,7 +126,7 @@ layers:
   - END
   - Ctl+$$mdi:arrow-right-bold$$
   - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
-  - '&LC(DEL)'
+  - Ctl+$$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
