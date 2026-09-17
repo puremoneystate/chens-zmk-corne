@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
-  - {t: 'Gui+$$mdi:keyboard-space$$', h: LGUI}
+  - {t: 'Alt+$$mdi:keyboard-space$$', h: LGUI}
   - $$mdi:keyboard-space$$
   - {t: Num-Sym, h: Num-Sym}
   - {t: Nav-Ctrl, h: Nav-Ctrl}
