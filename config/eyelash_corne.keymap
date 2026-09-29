@@ -120,8 +120,8 @@
             timeout-ms = <200>;
         };
 
-        fslh {
-            bindings = <&kp FSLH>;
+        backslash {
+            bindings = <&kp BACKSLASH>;
             key-positions = <39 40>;
             layers = <1>;
             timeout-ms = <200>;
