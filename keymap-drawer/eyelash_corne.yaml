@@ -44,12 +44,12 @@ layers:
   - {t: /, s: '?'}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - {t: 'Alt+$$mdi:keyboard-space$$', h: LGUI}
-  - $$mdi:keyboard-space$$
-  - {t: Num-Sym, h: Num-Sym}
+  - {t: '$$mdi:keyboard-space$$', h: Sym}
+  - {t: Sym, h: Sym}
   - {t: Nav-Ctrl, h: Nav-Ctrl}
   - {t: Nav, h: Nav}
   - $$mdi:apple-keyboard-option$$
-  Num-Sym:
+  Sym:
   - {t: '`', s: '~'}
   - '!'
   - '@'
@@ -57,7 +57,7 @@ layers:
   - $
   - '%'
   - $$mdi:volume-high$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '|'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -72,7 +72,7 @@ layers:
   - $$mdi:skip-previous$$
   - $$mdi:play-pause$$
   - $$mdi:skip-next$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: '|'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
@@ -93,11 +93,11 @@ layers:
   - '*'
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {type: held alternate}
   - Fn
   - {t: '0', s: )}
-  - $$mdi:keyboard-space$$
+  - {t: ., s: '>'}
   Nav-Ctrl:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -107,9 +107,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Sft+$$mdi:arrow-left-bold$$
   - HOME
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+Ctl+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -136,9 +136,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+$$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -156,9 +156,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-down$$
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-up$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -181,13 +181,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -240,7 +240,7 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {type: held}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -290,7 +290,7 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-space$$', h: Game-alt}
-  - Num-Sym
+  - Sym
   - Nav-Ctrl
   - Nav
   - $$mdi:apple-keyboard-option$$
@@ -352,27 +352,27 @@ combos:
 - p: [2, 42]
   k: Alt+F4
   l: [Base]
-- p: [4, 5]
+- p: [4, 3]
   k: (
-  l: [Num-Sym]
-- p: [7, 8]
+  l: [Sym]
+- p: [8, 9]
   k: )
-  l: [Num-Sym]
-- p: [17, 18]
+  l: [Sym]
+- p: [17, 16]
   k: {t: '[', s: '{'}
-  l: [Num-Sym]
-- p: [22, 23]
+  l: [Sym]
+- p: [23, 24]
   k: {t: ']', s: '}'}
-  l: [Num-Sym]
-- p: [32, 33]
+  l: [Sym]
+- p: [32, 31]
   k: '{'
-  l: [Num-Sym]
-- p: [36, 37]
+  l: [Sym]
+- p: [37, 38]
   k: '}'
-  l: [Num-Sym]
+  l: [Sym]
 - p: [39, 40]
   k: {t: \, s: '|'}
-  l: [Num-Sym]
+  l: [Sym]
 - p: [40, 41]
   k: '|'
-  l: [Num-Sym]
+  l: [Sym]
