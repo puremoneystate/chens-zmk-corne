@@ -201,10 +201,10 @@
         layer_2 {
             display-name = "Nav-Ctrl";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &kp LC(LS(LEFT))  &kp HOME  &kp LS(LC(RIGHT))  &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &kp LC(LEFT)      &kp END   &kp LC(RIGHT)      &kp LC(BSPC)  &kp LC(DEL)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &kp BACKSPACE     &trans    &kp LC(DEL)        &trans        &trans
-                        &trans  &trans  &mo 4                                     &trans  &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &kp LC(LS(LEFT))   &kp HOME  &kp LS(LC(RIGHT))  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &kp LC(LEFT)       &kp END   &kp LC(RIGHT)      &kp LC(BSPC)  &kp LC(DEL)
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &kp LC(BACKSPACE)  &trans    &kp LC(DEL)        &trans        &trans
+                        &trans  &trans  &mo 4                                     &trans  &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
