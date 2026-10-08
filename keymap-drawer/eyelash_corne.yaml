@@ -82,16 +82,16 @@ layers:
   - Ctl+Z
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', s: +}
   - +
+  - {t: '=', s: +}
   - $$mdi:volume-off$$
   - $$mdi:volume-low$$
   - {t: ., s: '>'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - '*'
   - {t: /, s: '?'}
+  - '*'
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {type: held alternate}
@@ -353,16 +353,16 @@ combos:
   k: Alt+F4
   l: [Base]
 - p: [4, 3]
-  k: (
-  l: [Sym]
-- p: [8, 9]
-  k: )
-  l: [Sym]
-- p: [17, 16]
   k: {t: '[', s: '{'}
   l: [Sym]
-- p: [23, 24]
+- p: [8, 9]
   k: {t: ']', s: '}'}
+  l: [Sym]
+- p: [17, 16]
+  k: (
+  l: [Sym]
+- p: [23, 24]
+  k: (
   l: [Sym]
 - p: [32, 31]
   k: '{'
