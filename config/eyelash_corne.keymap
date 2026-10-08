@@ -78,29 +78,29 @@
 
         // symbols
 
-        lpar {
-            bindings = <&kp LPAR>;
-            key-positions = <4 3>;
-            layers = <1>;
-            timeout-ms = <200>;
-        };
-
-        rpar {
-            bindings = <&kp RPAR>;
-            key-positions = <8 9>;
-            layers = <1>;
-            timeout-ms = <200>;
-        };
-
         lbkt {
             bindings = <&kp LBKT>;
-            key-positions = <17 16>;
+            key-positions = <4 3>;
             layers = <1>;
             timeout-ms = <200>;
         };
 
         rbkt {
             bindings = <&kp RBKT>;
+            key-positions = <8 9>;
+            layers = <1>;
+            timeout-ms = <200>;
+        };
+
+        lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <17 16>;
+            layers = <1>;
+            timeout-ms = <200>;
+        };
+
+        rpar {
+            bindings = <&kp LPAR>;
             key-positions = <23 24>;
             layers = <1>;
             timeout-ms = <200>;
@@ -191,7 +191,7 @@
             bindings = <
 &kp GRAVE      &kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT                            &kp C_VOL_UP              &kp PIPE       &kp N7  &kp N8   &kp N9  &kp MINUS  &trans
 &kp TILDE      &kp CARET  &kp AMPS  &kp ASTRK  &kp MINUS  &kp UNDER                &kp C_PREV  &kp C_PP      &kp C_NEXT  &kp BACKSLASH  &kp N4  &kp N5   &kp N6  &kp PLUS   &kp EQUAL
-&kp LC(LS(Z))  &kp LC(Z)  &trans    &trans     &kp EQUAL  &kp PLUS   &kp C_MUTE                &kp C_VOL_DN              &kp DOT        &kp N1  &kp N2   &kp N3  &kp ASTRK  &kp SLASH
+&kp LC(LS(Z))  &kp LC(Z)  &trans    &trans     &kp PLUS   &kp EQUAL  &kp C_MUTE                &kp C_VOL_DN              &kp DOT        &kp N1  &kp N2   &kp N3  &kp SLASH  &kp ASTRK
                                     &trans     &trans     &trans                                                         &mo 4          &kp N0  &kp DOT
             >;
 
