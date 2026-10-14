@@ -47,7 +47,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Sym}
   - {t: Sym, h: Sym}
   - Nav-Ctrl
-  - Nav
+  - '&td_nav_nav_ctl'
   - $$mdi:apple-keyboard-option$$
   Sym:
   - {t: '`', s: '~'}
@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - {t: '$$mdi:transfer$$', type: trans}
