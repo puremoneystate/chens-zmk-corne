@@ -100,7 +100,7 @@
         };
 
         rpar {
-            bindings = <&kp LPAR>;
+            bindings = <&kp RPAR>;
             key-positions = <23 24>;
             layers = <1>;
             timeout-ms = <200>;
