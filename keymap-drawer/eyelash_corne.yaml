@@ -46,8 +46,8 @@ layers:
   - {t: 'Alt+$$mdi:keyboard-space$$', h: LGUI}
   - {t: '$$mdi:keyboard-space$$', h: Sym}
   - {t: Sym, h: Sym}
-  - {t: Nav-Ctrl, h: Nav-Ctrl}
-  - {t: Nav, h: Nav}
+  - Nav-Ctrl
+  - Nav
   - $$mdi:apple-keyboard-option$$
   Sym:
   - {t: '`', s: '~'}

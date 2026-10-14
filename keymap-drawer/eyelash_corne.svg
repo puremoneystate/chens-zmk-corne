@@ -551,18 +551,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.9em">Nav-</tspan><tspan x="0" dy="1.2em">Ctrl</tspan>
+<tspan x="0" dy="-0.6em">Nav-</tspan><tspan x="0" dy="1.2em">Ctrl</tspan>
 </text>
-<a href="#Nav-Ctrl">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">Nav-Ctrl</tspan></text>
-</a></g>
+</g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <a href="#Nav">
 <text x="0" y="-4" class="key tap layer-activator">Nav</text>
-</a><a href="#Nav">
-<text x="0" y="24" class="key hold layer-activator">Nav</text>
 </a></g>
 <g transform="translate(756, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
