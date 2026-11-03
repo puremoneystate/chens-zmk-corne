@@ -45,7 +45,7 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - {t: 'Alt+$$mdi:keyboard-space$$', h: (LGUI)}
   - {t: '$$mdi:keyboard-space$$', h: Sym}
-  - Sym
+  - '&td_sym_lalt'
   - Nav-Ctrl
   - Nav
   - $$mdi:apple-keyboard-option$$
@@ -94,7 +94,7 @@ layers:
   - '*'
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Fn
   - {t: '0', s: )}
   - {t: ., s: '>'}
@@ -241,7 +241,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held}
+  - {type: held alternate}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
