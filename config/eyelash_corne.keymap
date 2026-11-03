@@ -190,7 +190,7 @@
                          &mt (LGUI) LA(SPACE)  &lt 1 SPACE  &td_sym_lalt                                                        &mo 2  &mo 3  &kp RALT
             >;
 
-            sensor-bindings = <&scroll>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_1 {
@@ -202,7 +202,7 @@
                                     &trans     &trans     &trans                                                         &mo 4          &kp N0  &kp DOT
             >;
 
-            sensor-bindings = <&scroll>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_2 {
@@ -214,7 +214,7 @@
                         &trans  &trans  &mo 4                                     &trans  &trans             &trans
             >;
 
-            sensor-bindings = <&scroll>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_3 {
@@ -226,7 +226,7 @@
                         &trans  &trans  &trans                                    &trans  &trans          &trans
             >;
 
-            sensor-bindings = <&scroll>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_4 {
@@ -238,7 +238,7 @@
                                         &trans        &trans        &trans                                          &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_5 {
@@ -250,7 +250,7 @@
                          &kp SPACE  &lt 6 SPACE  &mo 1                                                      &mo 2  &mo 3  &kp RALT
             >;
 
-            sensor-bindings = <&scroll>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_6 {
@@ -262,7 +262,7 @@
                           &trans  &trans  &trans                                                      &to 0  &to 0  &kp RALT
             >;
 
-            sensor-bindings = <&scroll>;
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
