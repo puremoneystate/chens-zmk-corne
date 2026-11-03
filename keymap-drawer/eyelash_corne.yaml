@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:volume-high$$
   - Y
   - U
   - I
@@ -20,9 +20,9 @@ layers:
   - {t: D, h: Nav-Ctrl}
   - {t: F, h: Nav}
   - G
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB1'
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:skip-previous$$
+  - PLAY PAUSE
+  - $$mdi:skip-next$$
   - H
   - J
   - K
@@ -36,18 +36,18 @@ layers:
   - V
   - B
   - '&mkp MB3'
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:volume-low$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
-  - {t: 'Alt+$$mdi:keyboard-space$$', h: LGUI}
+  - {t: 'Alt+$$mdi:keyboard-space$$', h: (LGUI)}
   - {t: '$$mdi:keyboard-space$$', h: Sym}
-  - {t: Sym, h: Sym}
+  - $$mdi:apple-keyboard-option$$
   - Nav-Ctrl
-  - '&td_nav_nav_ctl'
+  - Nav
   - $$mdi:apple-keyboard-option$$
   Sym:
   - {t: '`', s: '~'}
@@ -94,7 +94,7 @@ layers:
   - '*'
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Fn
   - {t: '0', s: )}
   - {t: ., s: '>'}
@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -241,7 +241,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held}
+  - {type: held alternate}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -340,7 +340,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Fn, h: toggle}
+  - {t: Base, h: toggle}
   - {t: Base, h: toggle}
   - $$mdi:apple-keyboard-option$$
 combos:
