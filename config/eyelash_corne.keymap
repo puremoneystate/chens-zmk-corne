@@ -172,7 +172,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "Tap dance layer 1 and LALT";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&kp LALT>;
+            bindings = <&mo 4>, <&kp LALT>;
         };
     };
 
@@ -199,7 +199,7 @@
 &kp GRAVE      &kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT                            &kp C_VOL_UP              &kp PIPE       &kp N7  &kp N8   &kp N9  &kp MINUS  &trans
 &kp TILDE      &kp CARET  &kp AMPS  &kp ASTRK  &kp MINUS  &kp UNDER                &kp C_PREV  &kp C_PP      &kp C_NEXT  &kp BACKSLASH  &kp N4  &kp N5   &kp N6  &kp PLUS   &kp EQUAL
 &kp LC(LS(Z))  &kp LC(Z)  &trans    &trans     &kp PLUS   &kp EQUAL  &kp C_MUTE                &kp C_VOL_DN              &kp DOT        &kp N1  &kp N2   &kp N3  &kp SLASH  &kp ASTRK
-                                    &trans     &trans     &trans                                                         &mo 4          &kp N0  &kp DOT
+                                    &trans     &trans     &trans                                                         &lt 2 SPACE    &kp N0  &kp DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -223,7 +223,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &msc SCRL_DOWN  &kp UP    &msc SCRL_UP  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &kp LEFT        &kp DOWN  &kp RIGHT     &kp BSPC  &kp DEL
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &kp BACKSPACE   &trans    &kp DEL       &trans    &trans
-                        &trans  &trans  &trans                                    &trans  &trans          &trans
+                        &trans  &mo 2   &trans                                    &trans  &trans          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
